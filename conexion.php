@@ -2,17 +2,15 @@
 
 function conectar(){
     //almacenamos los datos para la conexion
-    $servidor = "localhost";
+   
     $base = "dssd2016_bd";
-    $usuario = "root";
-   // $pass = "";
+    $usuario = "adminQX4ywBp";
+    $pass = "2RlCQ73jaZhg";
     global $conexion;
     //conectamos
-    $conexion=@mysql_connect($servidor, $usuario);
-    if($conexion){
-     mysql_select_db($base,$conexion);
-    }else{
-        echo "No se logro conectar a la base de datos";
+    $conexion= new PDO("mysql:host=localhost;dbname=inscripciones",  $usuario, $pass);
+    if(!$conexion){
+      echo "No se logro conectar a la base de datos";
     }
 }
  
