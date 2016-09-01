@@ -11,8 +11,8 @@ $tipo= $_POST['tipo'];
 conectar();
 $sql = "INSERT INTO trabajo_tb(titulo, autor, autores, resumen, tema, correo_personal, correo_gmail, t_presentacion, estado) 
  VALUES ('$titulo','$autor','$autores','$resumen','$tema','$correoPersonal','$correoGmail','$tipo', 'ingresada')";
+$conexion->query($sql);
 
-$result = mysql_query($sql);
 desconectar();
 //   echo "¡Gracias! Hemos recibido sus datos.\n"; 
 // process form
