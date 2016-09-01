@@ -16,7 +16,7 @@ function conectar(){
  
 //desconectamos
 function desconectar(){
-    mysql_close(); //desconectamos
+    $conexion; //desconectamos
 }
 
 
