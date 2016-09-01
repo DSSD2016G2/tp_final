@@ -8,7 +8,7 @@ function conectar(){
     $pass = "2RlCQ73jaZhg";
     global $conexion;
     //conectamos
-    $conexion= new PDO("mysql:host=localhost;dbname=inscripciones",  $usuario, $pass);
+    $conexion= new PDO("mysql:host=localhost;dbname=inscripcion",  $usuario, $pass);
     if(!$conexion){
       echo "No se logro conectar a la base de datos";
     }
